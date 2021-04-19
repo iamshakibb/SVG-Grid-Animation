@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>SVG Grid Animation With GSAP</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Lock in a shackle.</h1>
+      <div class="box">
+        <svg viewBox="0 0  100 100">
+          <defs>
+            <clipPath id="blueClip">
+              <rect
+                class="blueShape"
+                x="30"
+                y="0"
+                width="70"
+                height="40"
+                fill="#fff"
+              />
+            </clipPath>
+            <clipPath id="redClip">
+              <rect
+                class="redShape"
+                x="60"
+                y="60"
+                width="50"
+                height="40"
+                fill="#fff"
+              />
+            </clipPath>
+            <clipPath id="orangeClip">
+              <rect
+                class="orangeShape"
+                x="0"
+                y="30"
+                width="55"
+                height="70"
+                fill="#fff"
+              />
+            </clipPath>
+          </defs>
+
+          <g class="Main">
+            <!-- overlay for image -->
+            <rect
+              class="blueShape"
+              x="30"
+              y="0"
+              width="70"
+              height="40"
+              fill="#fff"
+            ></rect>
+            <rect
+              class="redShape"
+              x="60"
+              y="60"
+              width="50"
+              height="40"
+              fill="#007580"
+            ></rect>
+            <rect
+              class="orangeShape"
+              x="0"
+              y="30"
+              width="55"
+              height="70"
+              fill="#fed049"
+            ></rect>
+            <!-- Images -->
+            <image
+              clip-path="url(#blueClip)"
+              x="30"
+              y="0"
+              width="70"
+              height="40"
+              preserveAspectRatio="none"
+              href="images/img2.webp"
+            />
+
+            <image
+              clip-path="url(#redClip)"
+              x="60"
+              y="60"
+              width="50"
+              height="40"
+              preserveAspectRatio="none"
+              href="images/img1.webp"
+            />
+
+            <image
+              clip-path="url(#orangeClip)"
+              x="0"
+              y="30"
+              width="55"
+              height="70"
+              preserveAspectRatio="none"
+              href="images/img3.jpg"
+            />
+
+            <!-- circle -->
+            <circle
+              class="hero__circle"
+              cx="10"
+              cy="10"
+              r="10"
+              fill="yellow"
+              style="transform-origin: 0px 0px; opacity: 1"
+            ></circle>
+
+            <circle
+              class="hero__circle"
+              cx="55"
+              cy="60"
+              r="5"
+              fill="red"
+              style="transform-origin: 0px 0px; opacity: 1"
+            ></circle>
+          </g>
+        </svg>
+      </div>
+    </div>
+    <script src="js/gsap-latest-beta.min.js"></script>
+    <script src="js/CSSRulePlugin3.min.js"></script>
+    <script src="js/script.js"></script>
+  </body>
+</html>
