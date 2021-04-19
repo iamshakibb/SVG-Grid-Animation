@@ -10,12 +10,13 @@ body {
 
 .container {
   width: 100%;
-  height: calc(100vh - 5rem);
+  height: calc(100vh - 10rem);
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 30px;
   flex-direction: column;
+  margin-top: 30px;
 }
 
 .container h1 {

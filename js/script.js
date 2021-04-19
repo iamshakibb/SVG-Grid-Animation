@@ -14,7 +14,7 @@ const tl = gsap.timeline({
   },
 });
 
-tl.set('.fouc--hero', {
+tl.set('.Main', {
   opacity: 1,
 })
   .to(text, { cssRule: { scaleY: 0 } })
